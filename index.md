@@ -37,3 +37,16 @@ There are two types of exceptions:
 
 **Finally:**
 Finally block is used after try-catch block. Closing connections, releasing file handelers etc. these types of activities are performed in finally block. This block will always execute exception one or two scenarios where system got exited or any abrupt stop of code due to some issue in the environment or server. 
+
+
+# **Que. Database**
+*What is normalization?*
+  Normalization is a database design technique to organize the data to reduce redundancy in the database.
+*What is indexing?*
+  Indexing is an optimization technique which will use b-tree or hashtable internally to imporve the data  retrieval. 
+*What is primary key?*
+  An unique identifier of a row in a table.
+*What is foreign key?*
+  Foreign key is used when we want to create a relation between two tables. A primary key of a table will be foreign key for another table.
+
+
