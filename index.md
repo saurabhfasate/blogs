@@ -21,3 +21,16 @@ Popular Core Java Interview Questions
 **Interface:**
   Interface has atleast one abstract method. a keyword abstract is not needed in interface.
   All the methods in abstract class are abstract except static methods.  
+
+# **Q3. How to handle exception in Java?**
+
+**Throw exception:**
+Use throws in the method signature or throw in the method body.
+
+**Try Catch:**
+Enclose code that might throw exceptions in a try block, and handle exceptions in the catch block.
+
+There are two types of exceptions:
+
+**Compile-time exceptions**: Must be handled.
+**Runtime exceptions**: Require code or logic changes.
