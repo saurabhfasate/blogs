@@ -32,5 +32,8 @@ Enclose code that might throw exceptions in a try block, and handle exceptions i
 
 There are two types of exceptions:
 
-**Compile-time exceptions**: Must be handled.
-**Runtime exceptions**: Require code or logic changes.
+- **Compile-time exceptions**: Must be handled.
+- **Runtime exceptions**: Require code or logic changes.
+
+**Finally:**
+Finally block is used after try-catch block. Closing connections, releasing file handelers etc. these types of activities are performed in finally block. This block will always execute exception one or two scenarios where system got exited or any abrupt stop of code due to some issue in the environment or server. 
