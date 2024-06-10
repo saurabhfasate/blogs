@@ -40,13 +40,13 @@ Finally block is used after try-catch block. Closing connections, releasing file
 
 
 # **Que. Database**
-*What is normalization?*
+- *What is normalization?*
   Normalization is a database design technique to organize the data to reduce redundancy in the database.
-*What is indexing?*
+- *What is indexing?*
   Indexing is an optimization technique which will use b-tree or hashtable internally to imporve the data  retrieval. 
-*What is primary key?*
+- *What is primary key?*
   An unique identifier of a row in a table.
-*What is foreign key?*
+- *What is foreign key?*
   Foreign key is used when we want to create a relation between two tables. A primary key of a table will be foreign key for another table.
 
 
