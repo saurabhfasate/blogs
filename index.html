@@ -55,20 +55,38 @@
             background-color: #eaeaea;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        .blog-content {
+            display: none;
+            margin-top: 20px;
+        }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Technical Blogs</h1>
+            <h1>Blog List</h1>
         </header>
         <ul>
-            <li><a href="github.md" target="_blank">GITHUB</a></li>
-            <li><a href="systemdesign.md" target="_blank">SYSTEM DESIGN</a></li>
-            <li><a href="linux.md" target="_blank">LINUX</a></li>
-            <li><a href="interviewquestions.md" target="_blank">Interview Questions</a></li>
+            <li><a href="#" data-file="github.md" onclick="loadMarkdown(event)">GITHUB</a></li>
+            <li><a href="#" data-file="linux.md" onclick="loadMarkdown(event)">LINUX</a></li>
+            <li><a href="#" data-file="systemdesign.md" onclick="loadMarkdown(event)">SYSTEM DESIGN</a></li>
+            <li><a href="#" data-file="interviewquestions.md" onclick="loadMarkdown(event)">INTERVIEW QUESTIONS</a></li>
             <!-- Add more blog entries as needed -->
         </ul>
+        <div id="blog-content" class="blog-content"></div>
     </div>
+    <script>
+        async function loadMarkdown(event) {
+            event.preventDefault();
+            const file = event.target.getAttribute('data-file');
+            const response = await fetch(file);
+            const markdown = await response.text();
+            const content = marked(markdown);
+            const blogContentDiv = document.getElementById('blog-content');
+            blogContentDiv.innerHTML = content;
+            blogContentDiv.style.display = 'block';
+        }
+    </script>
 </body>
 </html>
